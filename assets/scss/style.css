@@ -88,8 +88,7 @@
           text-transform: uppercase;
           font-family: "Montserrat", sans-serif;
           font-weight: bold; }
-        .header__menu ul li a:hover,
-        .header__menu ul li .header_menu .current-item a {
+        .header__menu ul li a:hover {
           text-decoration: none;
           color: #8262b5; } }
 @media screen and (max-width: 990px) {
@@ -103,16 +102,40 @@
       margin: 0;
       padding-right: 100px;
       padding-top: 5px; }
+    .header__menu .toggle-nav {
+      margin-top: 10px;
+      margin-bottom: 5px;
+      margin-left: 20px;
+      padding: 9px 15px;
+      display: inline-block !important;
+      border-radius: 3px;
+      background: #303030;
+      color: #fff;
+      font-size: 20px;
+      transition: color linear 0.25s; }
 
+  .header__menu a {
+    text-decoration: none; }
+  .header__menu a:hover {
+    color: #8262b5; }
   .header__menu ul {
     margin-left: 20px;
     position: absolute;
     z-index: 9999;
     top: 100%;
     padding: 10px 18px;
-    box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.15);
     border-radius: 3px;
     background: #303030; }
+    .header__menu ul li {
+      margin: 5px 0px 5px 0px;
+      float: none;
+      display: block; }
+      .header__menu ul li a {
+        display: block;
+        color: #fff;
+        text-transform: uppercase;
+        font-family: "Montserrat", sans-serif;
+        font-weight: bold; }
 
   .header__menu ul:after {
     width: 0px;
@@ -124,45 +147,7 @@
     transform: translate(0%, -100%);
     border-left: 7px solid transparent;
     border-right: 7px solid transparent;
-    border-bottom: 7px solid #303030; }
-
-  .header__menu li {
-    margin: 5px 0px 5px 0px;
-    float: none;
-    display: block; }
-
-  .header__menu a {
-    text-decoration: none;
-    display: block;
-    color: #fff;
-    text-transform: uppercase;
-    font-family: "Montserrat", sans-serif;
-    font-weight: bold; }
-
-  .header__menu a:hover {
-    color: #8262b5; }
-
-  .toggle-nav {
-    margin-top: 10px;
-    margin-bottom: 5px;
-    margin-left: 20px;
-    padding: 9px 15px;
-    display: inline-block !important;
-    box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.15);
-    border-radius: 3px;
-    background: #303030;
-    text-shadow: 0px 1px 0px rgba(0, 0, 0, 0.5);
-    color: #777;
-    font-size: 20px;
-    transition: color linear 0.25s; }
-
-  .toggle-nav.active {
-    text-decoration: none;
-    color: #fff; }
-
-  .search {
-    float: left;
-    margin: 12px 0px 0px 20px; } }
+    border-bottom: 7px solid #303030; } }
 .footer {
   background-color: #222222;
   margin-top: 5px; }
