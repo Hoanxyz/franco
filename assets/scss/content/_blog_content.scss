@@ -116,13 +116,13 @@ sans-serif;
         .post1 {
             background-color: #fff;
             margin-right: 15px;
-            .post-img {
+            &__img {
                 @include imageOfPost();
             }
-            .post-description {
+            &__description {
                 @include descriptionOfPost();
             }
-            .post-info {
+            &__info {
                 @include infoOfPost();
             }
         }
@@ -130,13 +130,13 @@ sans-serif;
             background-color: #fff;
             margin-left: 3px;
             margin-right: 13px;
-            .post-img {
+            &__img {
                 @include imageOfPost();
             }
-            .post-description {
+            &__description {
                 @include descriptionOfPost();
             }
-            .post-info {
+            &__info {
                 @include infoOfPost();
             }
         }
@@ -144,13 +144,13 @@ sans-serif;
             background-color: #fff;
             margin-right: 13px;
             margin-left: 3px;
-            .post-img {
+            &__img {
                 @include imageOfPost();
             }
-            .post-description {
+            &__description {
                 @include descriptionOfPost();
             }
-            .post-info {
+            &__info {
                 @include infoOfPost();
             }
         }

@@ -2,7 +2,7 @@
     z-index: 9900;
     .banner-left {
         position: relative;
-        .banner__content1 {
+        &__content {
             position: absolute;
             top: 56.8%;
             transform: translateX(-29%);
@@ -33,7 +33,7 @@
         }
     }
     .banner-right {
-        .banner-right__ad1 {
+        &__ad1 {
             position: relative;
             margin-bottom: 26px;
             .ad1__content {
@@ -57,7 +57,7 @@
                 }
             }
         }
-        .banner-right__ad2 {
+        &__ad2 {
             position: relative;
             .ad2__content {
                 position: absolute;
@@ -98,7 +98,7 @@
 @media screen and (max-width:990px) {
     .banner {
         .banner-right {
-            .banner-right__ad1 {
+            &__ad1 {
                 margin-bottom: 0;
             }
         }
@@ -108,7 +108,7 @@
 @media screen and (max-width:770px) {
     .banner {
         .banner-left {
-            .banner__content1 {
+            &__content {
                 position: absolute;
                 top: 56.8%;
                 transform: translateX(-10%);

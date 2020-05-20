@@ -194,23 +194,23 @@
     font-family: "Montserrat", sans-serif;
     font-size: 16px;
     padding: 62px 0 20px 0; }
-  .footer .navigation .line-footer {
+  .footer .navigation__line {
     height: 1px;
     background-color: #393939; }
-  .footer .navigation .navigation-content {
+  .footer .navigation__content {
     display: flex; }
-    .footer .navigation .navigation-content .menu2, .footer .navigation .navigation-content .menu1 {
+    .footer .navigation__content .menu2, .footer .navigation__content .menu1 {
       padding-top: 20px; }
-      .footer .navigation .navigation-content .menu2 ul, .footer .navigation .navigation-content .menu1 ul {
+      .footer .navigation__content .menu2 ul, .footer .navigation__content .menu1 ul {
         padding-left: 0;
         list-style-type: none; }
-        .footer .navigation .navigation-content .menu2 ul li, .footer .navigation .navigation-content .menu1 ul li {
+        .footer .navigation__content .menu2 ul li, .footer .navigation__content .menu1 ul li {
           line-height: 29px; }
-          .footer .navigation .navigation-content .menu2 ul li a, .footer .navigation .navigation-content .menu1 ul li a {
+          .footer .navigation__content .menu2 ul li a, .footer .navigation__content .menu1 ul li a {
             color: #888888;
             font-family: "Open Sans", sans-serif;
             font-size: 14px; }
-    .footer .navigation .navigation-content .menu1 {
+    .footer .navigation__content .menu1 {
       padding-left: 125px; }
   .footer .location {
     padding-left: 99px; }
@@ -221,20 +221,20 @@
       font-size: 16px;
       padding: 62px 0 20px 0;
       letter-spacing: 0.4px; }
-    .footer .location .line-footer {
+    .footer .location__line {
       height: 1px;
       background-color: #393939; }
-    .footer .location .location-content {
+    .footer .location__content {
       list-style-type: none;
       padding-top: 25px;
       padding-left: 0; }
-      .footer .location .location-content li a {
+      .footer .location__content li a {
         font-size: 14px;
         color: #888888;
         display: flex; }
-        .footer .location .location-content li a i {
+        .footer .location__content li a i {
           padding-top: 5px; }
-        .footer .location .location-content li a p {
+        .footer .location__content li a p {
           width: 80%;
           padding-left: 15px;
           font-family: "Open Sans", sans-serif; }
@@ -263,18 +263,18 @@
   z-index: 9900; }
   .banner .banner-left {
     position: relative; }
-    .banner .banner-left .banner__content1 {
+    .banner .banner-left__content {
       position: absolute;
       top: 56.8%;
       transform: translateX(-29%);
       right: 0; }
-      .banner .banner-left .banner__content1 .slogan h2 {
+      .banner .banner-left__content .slogan h2 {
         font-family: Pacifico;
         font-size: 30.5px; }
-      .banner .banner-left .banner__content1 .banner__button {
+      .banner .banner-left__content .banner__button {
         display: flex;
         justify-content: flex-end; }
-        .banner .banner-left .banner__content1 .banner__button .button {
+        .banner .banner-left__content .banner__button .button {
           font-size: 15px;
           letter-spacing: 0;
           margin-top: 6px;
@@ -286,45 +286,45 @@
           border: 1px;
           background-color: #8262b5;
           color: #ffffff; }
-  .banner .banner-right .banner-right__ad1 {
+  .banner .banner-right__ad1 {
     position: relative;
     margin-bottom: 26px; }
-    .banner .banner-right .banner-right__ad1 .ad1__content {
+    .banner .banner-right__ad1 .ad1__content {
       padding-top: 25px;
       text-transform: uppercase;
       font-family: 'Montserrat', sans-serif;
       position: absolute;
       top: 30%;
       transform: translateX(57px); }
-      .banner .banner-right .banner-right__ad1 .ad1__content h3 {
+      .banner .banner-right__ad1 .ad1__content h3 {
         margin-bottom: 0;
         color: #616161;
         font-size: 16px;
         letter-spacing: 3px; }
-      .banner .banner-right .banner-right__ad1 .ad1__content h2 {
+      .banner .banner-right__ad1 .ad1__content h2 {
         padding: 0;
         font-weight: bold;
         font-size: 20px; }
-  .banner .banner-right .banner-right__ad2 {
+  .banner .banner-right__ad2 {
     position: relative; }
-    .banner .banner-right .banner-right__ad2 .ad2__content {
+    .banner .banner-right__ad2 .ad2__content {
       position: absolute;
       top: 37%;
       transform: translateX(35%); }
-      .banner .banner-right .banner-right__ad2 .ad2__content h2 {
+      .banner .banner-right__ad2 .ad2__content h2 {
         margin-top: 0;
         margin-bottom: 15px;
         font-family: 'Montserrat', sans-serif;
         font-weight: bold;
         font-size: 20px;
         text-transform: uppercase; }
-      .banner .banner-right .banner-right__ad2 .ad2__content h3 {
+      .banner .banner-right__ad2 .ad2__content h3 {
         margin-bottom: 0;
         letter-spacing: 3px;
         font-family: 'Montserrat', sans-serif;
         font-size: 16px;
         text-transform: uppercase; }
-      .banner .banner-right .banner-right__ad2 .ad2__content .button-ad2 {
+      .banner .banner-right__ad2 .ad2__content .button-ad2 {
         padding-left: 7px;
         display: block;
         line-height: 40px;
@@ -337,21 +337,21 @@
         color: #ffffff; }
 
 @media screen and (max-width: 990px) {
-  .banner .banner-right .banner-right__ad1 {
+  .banner .banner-right__ad1 {
     margin-bottom: 0; } }
 @media screen and (max-width: 770px) {
-  .banner .banner-left .banner__content1 {
+  .banner .banner-left__content {
     position: absolute;
     top: 56.8%;
     transform: translateX(-10%);
     right: 0; }
-    .banner .banner-left .banner__content1 .slogan h2 {
+    .banner .banner-left__content .slogan h2 {
       font-family: Pacifico;
       font-size: 23px; }
-    .banner .banner-left .banner__content1 .banner__button {
+    .banner .banner-left__content .banner__button {
       display: flex;
       justify-content: flex-end; }
-      .banner .banner-left .banner__content1 .banner__button .button {
+      .banner .banner-left__content .banner__button .button {
         font-size: 15px;
         letter-spacing: 0;
         margin-top: 6px;
@@ -822,12 +822,12 @@
     .blog__post .post1 {
       background-color: #fff;
       margin-right: 15px; }
-      .blog__post .post1 .post-img {
+      .blog__post .post1__img {
         position: relative; }
-        .blog__post .post1 .post-img img {
+        .blog__post .post1__img img {
           width: 100%;
           display: block; }
-        .blog__post .post1 .post-img .border-date {
+        .blog__post .post1__img .border-date {
           display: flex;
           align-items: center;
           width: 60px;
@@ -836,7 +836,7 @@
           position: absolute;
           background-color: #a1d1dd;
           margin-left: 22px; }
-          .blog__post .post1 .post-img .border-date .date {
+          .blog__post .post1__img .border-date .date {
             position: relative;
             padding: 7px 5px;
             background-color: #a1d1dd;
@@ -847,35 +847,35 @@
             border: 1px solid #fff;
             margin: 0 auto;
             font-family: "Montserrat", sans-serif; }
-            .blog__post .post1 .post-img .border-date .date .month {
+            .blog__post .post1__img .border-date .date .month {
               display: inline;
               font-size: 14px; }
-            .blog__post .post1 .post-img .border-date .date .day {
+            .blog__post .post1__img .border-date .date .day {
               position: absolute;
               font-size: 16px;
               font-weight: bold;
               top: 55%;
               right: 30%; }
-      .blog__post .post1 .post-description {
+      .blog__post .post1__description {
         padding: 16px 25px 19px 20px;
         border-bottom: 1px solid #ededed; }
-        .blog__post .post1 .post-description .title-post {
+        .blog__post .post1__description .title-post {
           text-align: start;
           font-family: "Montserrat", sans-serif;
           font-size: 16px;
           font-weight: bold;
           color: #000000;
           letter-spacing: -0.35px; }
-        .blog__post .post1 .post-description .title-post:hover {
+        .blog__post .post1__description .title-post:hover {
           color: #a08ac5;
           text-decoration: none; }
-        .blog__post .post1 .post-description .description {
+        .blog__post .post1__description .description {
           padding-top: 16px;
           font-family: "Open Sans", sans-serif;
           font-size: 14px;
           letter-spacing: 0.3px;
           line-height: 22px; }
-      .blog__post .post1 .post-info {
+      .blog__post .post1__info {
         padding: 16px 25px;
         font-size: 14px;
         font-family: "Open Sans", sans-serif;
@@ -884,12 +884,12 @@
       background-color: #fff;
       margin-left: 3px;
       margin-right: 13px; }
-      .blog__post .post2 .post-img {
+      .blog__post .post2__img {
         position: relative; }
-        .blog__post .post2 .post-img img {
+        .blog__post .post2__img img {
           width: 100%;
           display: block; }
-        .blog__post .post2 .post-img .border-date {
+        .blog__post .post2__img .border-date {
           display: flex;
           align-items: center;
           width: 60px;
@@ -898,7 +898,7 @@
           position: absolute;
           background-color: #a1d1dd;
           margin-left: 22px; }
-          .blog__post .post2 .post-img .border-date .date {
+          .blog__post .post2__img .border-date .date {
             position: relative;
             padding: 7px 5px;
             background-color: #a1d1dd;
@@ -909,35 +909,35 @@
             border: 1px solid #fff;
             margin: 0 auto;
             font-family: "Montserrat", sans-serif; }
-            .blog__post .post2 .post-img .border-date .date .month {
+            .blog__post .post2__img .border-date .date .month {
               display: inline;
               font-size: 14px; }
-            .blog__post .post2 .post-img .border-date .date .day {
+            .blog__post .post2__img .border-date .date .day {
               position: absolute;
               font-size: 16px;
               font-weight: bold;
               top: 55%;
               right: 30%; }
-      .blog__post .post2 .post-description {
+      .blog__post .post2__description {
         padding: 16px 25px 19px 20px;
         border-bottom: 1px solid #ededed; }
-        .blog__post .post2 .post-description .title-post {
+        .blog__post .post2__description .title-post {
           text-align: start;
           font-family: "Montserrat", sans-serif;
           font-size: 16px;
           font-weight: bold;
           color: #000000;
           letter-spacing: -0.35px; }
-        .blog__post .post2 .post-description .title-post:hover {
+        .blog__post .post2__description .title-post:hover {
           color: #a08ac5;
           text-decoration: none; }
-        .blog__post .post2 .post-description .description {
+        .blog__post .post2__description .description {
           padding-top: 16px;
           font-family: "Open Sans", sans-serif;
           font-size: 14px;
           letter-spacing: 0.3px;
           line-height: 22px; }
-      .blog__post .post2 .post-info {
+      .blog__post .post2__info {
         padding: 16px 25px;
         font-size: 14px;
         font-family: "Open Sans", sans-serif;
@@ -946,12 +946,12 @@
       background-color: #fff;
       margin-right: 13px;
       margin-left: 3px; }
-      .blog__post .post3 .post-img {
+      .blog__post .post3__img {
         position: relative; }
-        .blog__post .post3 .post-img img {
+        .blog__post .post3__img img {
           width: 100%;
           display: block; }
-        .blog__post .post3 .post-img .border-date {
+        .blog__post .post3__img .border-date {
           display: flex;
           align-items: center;
           width: 60px;
@@ -960,7 +960,7 @@
           position: absolute;
           background-color: #a1d1dd;
           margin-left: 22px; }
-          .blog__post .post3 .post-img .border-date .date {
+          .blog__post .post3__img .border-date .date {
             position: relative;
             padding: 7px 5px;
             background-color: #a1d1dd;
@@ -971,35 +971,35 @@
             border: 1px solid #fff;
             margin: 0 auto;
             font-family: "Montserrat", sans-serif; }
-            .blog__post .post3 .post-img .border-date .date .month {
+            .blog__post .post3__img .border-date .date .month {
               display: inline;
               font-size: 14px; }
-            .blog__post .post3 .post-img .border-date .date .day {
+            .blog__post .post3__img .border-date .date .day {
               position: absolute;
               font-size: 16px;
               font-weight: bold;
               top: 55%;
               right: 30%; }
-      .blog__post .post3 .post-description {
+      .blog__post .post3__description {
         padding: 16px 25px 19px 20px;
         border-bottom: 1px solid #ededed; }
-        .blog__post .post3 .post-description .title-post {
+        .blog__post .post3__description .title-post {
           text-align: start;
           font-family: "Montserrat", sans-serif;
           font-size: 16px;
           font-weight: bold;
           color: #000000;
           letter-spacing: -0.35px; }
-        .blog__post .post3 .post-description .title-post:hover {
+        .blog__post .post3__description .title-post:hover {
           color: #a08ac5;
           text-decoration: none; }
-        .blog__post .post3 .post-description .description {
+        .blog__post .post3__description .description {
           padding-top: 16px;
           font-family: "Open Sans", sans-serif;
           font-size: 14px;
           letter-spacing: 0.3px;
           line-height: 22px; }
-      .blog__post .post3 .post-info {
+      .blog__post .post3__info {
         padding: 16px 25px;
         font-size: 14px;
         font-family: "Open Sans", sans-serif;

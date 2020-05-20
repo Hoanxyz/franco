@@ -40,11 +40,11 @@ sans-serif;
             font-size: 16px;
             padding: 62px 0 20px 0;
         }
-        .line-footer {
+        &__line {
             height: 1px;
             background-color: #393939;
         }
-        .navigation-content {
+        &__content {
             display: flex;
             .menu2 {
                 padding-top: 20px;
@@ -77,11 +77,11 @@ sans-serif;
             padding: 62px 0 20px 0;
             letter-spacing: 0.4px;
         }
-        .line-footer {
+        &__line {
             height: 1px;
             background-color: #393939;
         }
-        .location-content {
+        &__content {
             list-style-type: none;
             padding-top: 25px;
             padding-left: 0;
@@ -124,6 +124,7 @@ sans-serif;
     }
 }
 
+//responsive
 @media screen and (max-width: 768px) {
     .footer {
         .location {

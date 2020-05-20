@@ -1,3 +1,4 @@
+//responsive
 jQuery(document).ready(function() {
     jQuery('.toggle-nav').click(function(e) {
         jQuery(this).toggleClass('active');
@@ -6,6 +7,7 @@ jQuery(document).ready(function() {
     });
 });
 
+//carousel-postOfBlog
 $('.owl-carousel').owlCarousel({
     loop: true,
     margin: 10,
