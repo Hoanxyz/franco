@@ -1,0 +1,358 @@
+@mixin items {
+    position: absolute;
+    bottom: 5.5px;
+    left: 7px;
+    display: block;
+    line-height: 40px;
+    text-align: center;
+    width: 118px;
+    height: 40px;
+    border: 1px;
+    background-color: #ffffff;
+    color: #000000;
+    font-family: 'Montserrat', sans-serif;
+    text-transform: uppercase;
+    font-size: 12px;
+}
+
+@mixin star {
+    padding-left: 0;
+    padding-top: 8px;
+    list-style-type: none;
+    display: flex;
+    font-size: 12px;
+    margin-bottom: 3px;
+}
+
+@mixin item__name {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 13.5px;
+    font-weight: bold;
+    margin-bottom: 0;
+}
+
+@mixin price {
+    margin-top: 10px;
+    font-size: 16px;
+    font-family: 'Open Sans', sans-serif;
+    .origin-price {
+        color: #a9a9a9;
+    }
+    .sale {
+        color: #8262b5;
+        font-weight: bold;
+    }
+}
+
+.product {
+    .title {
+        padding-top: 74px;
+        display: flex;
+        flex-direction: column;
+        h2 {
+            padding-top: 7px;
+            font-family: 'Montserrat', sans-serif;
+            font-weight: bold;
+            font-size: 24px;
+            text-transform: uppercase;
+            letter-spacing: 2.44px;
+        }
+        h3 {
+            font-family: 'Montserrat', sans-serif;
+            font-weight: bold;
+            font-size: 12px;
+            text-transform: uppercase;
+            color: #8c70ba;
+            letter-spacing: 6px;
+        }
+        .line {
+            width: 50px;
+            height: 1px;
+            background-color: #8262b5;
+            margin-top: 19px;
+            margin-bottom: 34px;
+        }
+    }
+    .row1 {
+        padding-top: 14px;
+        .item1 {
+            &__content {
+                position: relative;
+                .button {
+                    @include items;
+                }
+                .button:hover {
+                    text-decoration: none;
+                    color: #a08ac5;
+                }
+            }
+            &__info {
+                margin-top: 20px;
+                .name {
+                    @include item__name;
+                }
+                .stars {
+                    @include star;
+                }
+                .price {
+                    @include price();
+                }
+            }
+        }
+        .item2 {
+            &__content {
+                position: relative;
+                .button {
+                    @include items;
+                }
+                .button:hover {
+                    text-decoration: none;
+                    color: #a08ac5;
+                }
+            }
+            &__info {
+                margin-top: 20px;
+                .name {
+                    @include item__name;
+                }
+                .stars {
+                    @include star;
+                }
+                .price {
+                    @include price();
+                }
+            }
+        }
+        .item3 {
+            &__content {
+                position: relative;
+                .button {
+                    @include items;
+                }
+                .button:hover {
+                    text-decoration: none;
+                    color: #a08ac5;
+                }
+            }
+            .stars {
+                @include star;
+            }
+            &__info {
+                margin-top: 20px;
+                .name {
+                    @include item__name;
+                }
+                .stars {
+                    @include star;
+                }
+                .price {
+                    @include price();
+                }
+            }
+        }
+        .item4 {
+            &__content {
+                position: relative;
+                .button {
+                    @include items;
+                }
+                .button:hover {
+                    text-decoration: none;
+                    color: #a08ac5;
+                }
+            }
+            &__info {
+                margin-top: 20px;
+                .name {
+                    @include item__name;
+                }
+                .stars {
+                    @include star;
+                }
+                .price {
+                    @include price();
+                }
+            }
+        }
+    }
+    .row2 {
+        padding-top: 35px;
+        .item1 {
+            &__content {
+                position: relative;
+                .button {
+                    @include items;
+                }
+                .button:hover {
+                    text-decoration: none;
+                    color: #a08ac5;
+                }
+            }
+            &__info {
+                margin-top: 17px;
+                .name {
+                    @include item__name;
+                }
+                .stars {
+                    @include star;
+                }
+                .price {
+                    @include price();
+                }
+            }
+        }
+        .item2 {
+            &__content {
+                position: relative;
+                .button {
+                    @include items;
+                }
+                .button:hover {
+                    text-decoration: none;
+                    color: #a08ac5;
+                }
+            }
+            &__info {
+                margin-top: 17px;
+                .name {
+                    @include item__name;
+                }
+                .stars {
+                    @include star;
+                }
+                .price {
+                    @include price();
+                }
+            }
+        }
+        .item3 {
+            &__content {
+                position: relative;
+                .button {
+                    @include items;
+                }
+                .button:hover {
+                    text-decoration: none;
+                    color: #a08ac5;
+                }
+            }
+            &__info {
+                margin-top: 17px;
+                .name {
+                    @include item__name;
+                }
+                .stars {
+                    @include star;
+                }
+                .price {
+                    @include price();
+                }
+            }
+        }
+        .item4 {
+            &__content {
+                position: relative;
+                .button {
+                    @include items;
+                }
+                .button:hover {
+                    text-decoration: none;
+                    color: #a08ac5;
+                }
+            }
+            &__info {
+                margin-top: 17px;
+                .name {
+                    @include item__name;
+                }
+                .stars {
+                    @include star;
+                }
+                .price {
+                    @include price();
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .product {
+        .row1 {
+            .item1 {
+                &__info {
+                    text-align: center;
+                    .stars {
+                        display: flex;
+                        justify-content: center;
+                    }
+                }
+            }
+            .item2 {
+                &__info {
+                    text-align: center;
+                    .stars {
+                        display: flex;
+                        justify-content: center;
+                    }
+                }
+            }
+            .item3 {
+                &__info {
+                    text-align: center;
+                    .stars {
+                        display: flex;
+                        justify-content: center;
+                    }
+                }
+            }
+            .item4 {
+                &__info {
+                    text-align: center;
+                    .stars {
+                        display: flex;
+                        justify-content: center;
+                    }
+                }
+            }
+        }
+        .row2 {
+            .item1 {
+                &__info {
+                    text-align: center;
+                    .stars {
+                        display: flex;
+                        justify-content: center;
+                    }
+                }
+            }
+            .item2 {
+                &__info {
+                    text-align: center;
+                    .stars {
+                        display: flex;
+                        justify-content: center;
+                    }
+                }
+            }
+            .item3 {
+                &__info {
+                    text-align: center;
+                    .stars {
+                        display: flex;
+                        justify-content: center;
+                    }
+                }
+            }
+            .item4 {
+                &__info {
+                    text-align: center;
+                    .stars {
+                        display: flex;
+                        justify-content: center;
+                    }
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,184 @@
+$light-gray: #525252;
+$font-opensans: 'Open Sans',
+sans-serif;
+$font-montserrat: 'Montserrat',
+sans-serif;
+.header {
+    margin-bottom: 30px;
+    &__top {
+        display: flex;
+        background-color: #222222;
+        height: 46px;
+        white-space: nowrap;
+        align-items: center;
+        color: $light-gray;
+        font-family: $font-opensans;
+        font-size: 14px;
+        align-items: center;
+        .welcome {
+            flex-grow: 1;
+        }
+        .setting {}
+        .login {
+            margin: 0 30px;
+        }
+    }
+    .container-fluid {
+        display: flex;
+        width: 100%;
+        align-items: center;
+        .header__logo {
+            padding: 15px 14px;
+            border: 2px solid;
+        }
+        .cart {
+            padding-left: 43px;
+            display: flex;
+            ul {
+                font-size: 14px;
+                display: flex;
+                list-style-type: none;
+            }
+        }
+        .container {
+            flex-grow: 1;
+            margin: 0;
+            width: 100%;
+            padding: 0px;
+            .header__menu {
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+                .search {
+                    font-size: 14px;
+                }
+            }
+        }
+    }
+    &__border {
+        height: 1px;
+        background-color: #dddddd;
+    }
+}
+
+@media screen and (min-width: 990px) {
+    .header__menu {
+        height: 80px;
+        width: 100%;
+        padding-left: 83px;
+        padding-right: 120px;
+        .toggle-nav {
+            display: none;
+        }
+        .search {
+            font-size: 14px;
+            left: 0;
+            display: inline-block;
+        }
+        ul {
+            z-index: 9999;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            li {
+                margin: 0px 54.5px 0px 0px;
+                float: left;
+                list-style: none;
+                font-size: 14px;
+                a {
+                    white-space: nowrap;
+                    color: #000000;
+                    text-transform: uppercase;
+                    font-family: $font-montserrat;
+                    font-weight: bold;
+                }
+                a:hover,
+                .header_menu .current-item a {
+                    text-decoration: none;
+                    color: #8262b5;
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 990px) {
+    .header__menu {
+        position: relative;
+        display: inline-block;
+        padding-bottom: 5px;
+        .active {
+            display: none;
+        }
+        .search {
+            margin: 0;
+            padding-right: 100px;
+            padding-top: 5px;
+        }
+    }
+    .header__menu {
+        ul {
+            // width: 75%;
+            margin-left: 20px;
+            position: absolute;
+            z-index: 9999;
+            top: 100%;
+            padding: 10px 18px;
+            box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.15);
+            border-radius: 3px;
+            background: #303030;
+        }
+    }
+    .header__menu ul:after {
+        width: 0px;
+        height: 0px;
+        position: absolute;
+        top: 0%;
+        left: 22px;
+        content: '';
+        transform: translate(0%, -100%);
+        border-left: 7px solid transparent;
+        border-right: 7px solid transparent;
+        border-bottom: 7px solid #303030;
+    }
+    .header__menu li {
+        margin: 5px 0px 5px 0px;
+        float: none;
+        display: block;
+    }
+    .header__menu {
+        a {
+            text-decoration: none;
+            display: block;
+            color: #fff;
+            text-transform: uppercase;
+            font-family: $font-montserrat;
+            font-weight: bold;
+        }
+    }
+    .header__menu a:hover {
+        color: #8262b5;
+    }
+    .toggle-nav {
+        margin-top: 10px;
+        margin-bottom: 5px;
+        margin-left: 20px;
+        padding: 9px 15px;
+        display: inline-block!important;
+        box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.15);
+        border-radius: 3px;
+        background: #303030;
+        text-shadow: 0px 1px 0px rgba(0, 0, 0, 0.5);
+        color: #777;
+        font-size: 20px;
+        transition: color linear 0.25s;
+    }
+    .toggle-nav.active {
+        text-decoration: none;
+        color: #fff;
+    }
+    .search {
+        float: left;
+        margin: 12px 0px 0px 20px;
+    }
+}

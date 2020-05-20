@@ -1,0 +1,142 @@
+.banner {
+    z-index: 9900;
+    .banner-left {
+        position: relative;
+        .banner__content1 {
+            position: absolute;
+            top: 56.8%;
+            transform: translateX(-29%);
+            right: 0;
+            .slogan {
+                h2 {
+                    font-family: Pacifico;
+                    font-size: 30.5px;
+                }
+            }
+            .banner__button {
+                display: flex;
+                justify-content: flex-end;
+                .button {
+                    font-size: 15px;
+                    letter-spacing: 0;
+                    margin-top: 6px;
+                    display: block;
+                    line-height: 40px;
+                    text-align: center;
+                    width: 108px;
+                    height: 40px;
+                    border: 1px;
+                    background-color: #8262b5;
+                    color: #ffffff
+                }
+            }
+        }
+    }
+    .banner-right {
+        .banner-right__ad1 {
+            position: relative;
+            margin-bottom: 26px;
+            .ad1__content {
+                padding-top: 25px;
+                text-transform: uppercase;
+                font-family: 'Montserrat', sans-serif;
+                // width: 70%;
+                position: absolute;
+                top: 30%;
+                transform: translateX(57px);
+                h3 {
+                    margin-bottom: 0;
+                    color: #616161;
+                    font-size: 16px;
+                    letter-spacing: 3px;
+                }
+                h2 {
+                    padding: 0;
+                    font-weight: bold;
+                    font-size: 20px;
+                }
+            }
+        }
+        .banner-right__ad2 {
+            position: relative;
+            .ad2__content {
+                position: absolute;
+                top: 37%;
+                transform: translateX(35%);
+                h2 {
+                    margin-top: 0;
+                    margin-bottom: 15px;
+                    font-family: 'Montserrat', sans-serif;
+                    font-weight: bold;
+                    font-size: 20px;
+                    text-transform: uppercase;
+                }
+                h3 {
+                    margin-bottom: 0;
+                    letter-spacing: 3px;
+                    font-family: 'Montserrat', sans-serif;
+                    font-size: 16px;
+                    text-transform: uppercase;
+                }
+                .button-ad2 {
+                    padding-left: 7px;
+                    display: block;
+                    line-height: 40px;
+                    text-align: center;
+                    width: 108px;
+                    font-size: 15px;
+                    height: 40px;
+                    border: 1px;
+                    background-color: #8262b5;
+                    color: #ffffff;
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width:990px) {
+    .banner {
+        .banner-right {
+            .banner-right__ad1 {
+                margin-bottom: 0;
+            }
+        }
+    }
+}
+
+@media screen and (max-width:770px) {
+    .banner {
+        .banner-left {
+            .banner__content1 {
+                position: absolute;
+                top: 56.8%;
+                transform: translateX(-10%);
+                right: 0;
+                .slogan {
+                    h2 {
+                        font-family: Pacifico;
+                        font-size: 23px;
+                    }
+                }
+                .banner__button {
+                    display: flex;
+                    justify-content: flex-end;
+                    .button {
+                        font-size: 15px;
+                        letter-spacing: 0;
+                        margin-top: 6px;
+                        display: block;
+                        line-height: 40px;
+                        text-align: center;
+                        width: 108px;
+                        height: 40px;
+                        border: 1px;
+                        background-color: #8262b5;
+                        color: #ffffff
+                    }
+                }
+            }
+        }
+    }
+}
